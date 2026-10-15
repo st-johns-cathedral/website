@@ -40,7 +40,7 @@ function renderSiteHeader() {
     <header class="site-header">
       <div class="container header-inner">
         <a class="brand" href="${basePath}index.html" aria-label="St. John's Cathedral home">
-          <img class="brand-mark" src="${basePath}assets/images/cathedral-monogram.png" alt="" aria-hidden="true" />
+          <img class="brand-mark" src="${basePath}assets/images/cathedral-monogram-icon.png" alt="" aria-hidden="true" />
           <span class="brand-text">
             <strong>St. John's</strong>
             <small>Cathedral, Nazareth</small>
