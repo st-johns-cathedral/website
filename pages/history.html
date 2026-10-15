@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="History of St. John's Cathedral, Nazareth — from the first church to cathedral status in 2003." />
+    <title>History | St. John's Cathedral, Nazareth</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=Noto+Sans+Tamil:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/variables.css" />
+    <link rel="stylesheet" href="../css/base.css" />
+    <link rel="stylesheet" href="../css/layout.css" />
+    <link rel="stylesheet" href="../css/components.css" />
+    <link rel="stylesheet" href="../css/pages.css" />
+    <link rel="stylesheet" href="../css/responsive.css" />
+    <link rel="stylesheet" href="../css/print.css" />
+  </head>
+  <body data-page-title="History | St. John's Cathedral, Nazareth">
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <div id="site-header"></div>
+
+    <main id="main-content" class="page-shell">
+      <section class="page-hero">
+        <div class="container">
+          <div class="hero-copy" data-reveal>
+            <span class="eyebrow">Our story</span>
+            <h1>History of the cathedral</h1>
+            <p>From its first thatched church in 1803 to the present Gothic cathedral, the church reflects a long story of mission, faith, restoration, and growth.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section-heading">
+            <h2>Timeline</h2>
+          </div>
+          <div id="timeline" class="timeline" data-timeline></div>
+        </div>
+      </section>
+    </main>
+
+    <div id="site-footer"></div>
+
+    <script src="../js/config.js"></script>
+    <script src="../js/data.js"></script>
+    <script src="../js/i18n.js"></script>
+    <script src="../js/components.js"></script>
+    <script src="../js/main.js"></script>
+    <script>
+      const timeline = document.getElementById("timeline");
+      if (timeline && window.siteData && window.siteData.timeline) {
+        timeline.innerHTML = window.siteData.timeline.map((item) => `
+          <article class="timeline-item" data-reveal>
+            <span class="timeline-year">${item.year}</span>
+            <h4>${item.title}</h4>
+            <p>${item.text}</p>
+          </article>
+        `).join("");
+      }
+    </script>
+  </body>
+</html>
