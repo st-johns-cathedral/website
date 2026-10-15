@@ -1,0 +1,88 @@
+/* ===== RESPONSIVE DESIGN ===== */
+
+@media (max-width: 980px) {
+  .hero,
+  .calendar-shell,
+  .prayer-layout,
+  .contact-grid,
+  .giving-layout,
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-visual img {
+    height: auto;
+    aspect-ratio: 1 / 1;
+  }
+
+  .gallery-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .gallery-grid .gallery-item:nth-child(1),
+  .gallery-grid .gallery-item:nth-child(4n + 1) {
+    grid-column: span 1;
+  }
+
+  .site-nav {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: var(--surface);
+    border-bottom: 1px solid var(--line);
+    padding: 1rem 0;
+    z-index: 20;
+  }
+
+  .site-nav.is-open {
+    display: flex;
+    justify-content: center;
+  }
+
+  .nav-list {
+    flex-direction: column;
+    align-items: stretch;
+    width: min(100%, 420px);
+  }
+
+  .nav-link {
+    display: block;
+    text-align: center;
+    padding: 0.85rem 1rem;
+  }
+
+  .mobile-menu-toggle {
+    display: inline-flex;
+  }
+}
+
+@media (max-width: 720px) {
+  .header-inner {
+    min-height: 68px;
+  }
+
+  .lang-switch {
+    display: none;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .btn {
+    width: 100%;
+  }
+
+  .stat-grid,
+  .three-col,
+  .two-col {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+}

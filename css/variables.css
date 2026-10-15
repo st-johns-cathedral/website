@@ -1,0 +1,101 @@
+/* ===== VARIABLES ===== */
+/* Edit the theme here: colours, fonts, spacing, shadows, radii. */
+
+:root {
+  /* --- Brand Colours --- */
+  --color-oxblood: #5a1d2c;
+  --color-burgundy: #7c2433;
+  --color-burgundy-deep: #4c1724;
+  --color-gold: #bf9b5b;
+  --color-gold-soft: #d6c08a;
+  --color-ivory: #f7f1ea;
+  --color-stone: #d9d4ce;
+  --color-charcoal: #1e1b1e;
+  --color-slate: #3a3a3a;
+  --color-ink: #17181b;
+  --color-white: #ffffff;
+  --color-success: #2d6a4f;
+  --color-warning: #b7791f;
+  --color-error: #9b2c2c;
+  --color-shadow: rgba(23, 24, 27, 0.15);
+
+  /* --- Typography --- */
+  --font-heading: "Cormorant Garamond", Georgia, serif;
+  --font-body: "Inter", "Segoe UI", sans-serif;
+  --font-tamil: "Noto Sans Tamil", "Nirmala UI", sans-serif;
+
+  /* --- Spacing --- */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.25rem;
+  --space-6: 1.5rem;
+  --space-8: 2rem;
+  --space-10: 2.5rem;
+  --space-12: 3rem;
+  --space-16: 4rem;
+  --space-20: 5rem;
+  --space-24: 6rem;
+  --space-30: 7.5rem;
+
+  /* --- Layout --- */
+  --container-width: min(1180px, calc(100% - 2rem));
+  --radius-sm: 0.5rem;
+  --radius-md: 0.875rem;
+  --radius-lg: 1.25rem;
+  --shadow-soft: 0 18px 40px rgba(26, 16, 18, 0.08);
+  --shadow-strong: 0 24px 50px rgba(26, 16, 18, 0.14);
+
+  /* --- Theme --- */
+  --bg: var(--color-ivory);
+  --bg-alt: #f2ece7;
+  --bg-strong: #f0e6dc;
+  --surface: #ffffff;
+  --surface-alt: #f7efe7;
+  --text: var(--color-charcoal);
+  --text-soft: #4d4a49;
+  --line: rgba(90, 29, 44, 0.16);
+  --accent: var(--color-gold);
+  --accent-soft: rgba(191, 155, 91, 0.15);
+  --link: var(--color-burgundy);
+  --button-text: var(--color-white);
+
+  /* --- Navigation --- */
+  --header-bg: rgba(247, 241, 234, 0.8);
+  --header-border: rgba(90, 29, 44, 0.08);
+
+  /* --- Buttons --- */
+  --button-primary: var(--color-burgundy);
+  --button-primary-hover: var(--color-oxblood);
+  --button-secondary: transparent;
+  --button-secondary-border: rgba(90, 29, 44, 0.35);
+
+  /* --- Focus --- */
+  --focus-ring: rgba(191, 155, 91, 0.5);
+
+  /* --- Motion --- */
+  --transition-fast: 180ms ease;
+  --transition-medium: 260ms ease;
+  --transition-slow: 360ms ease;
+}
+
+/* Dark mode variant */
+body[data-theme="dark"] {
+  --bg: #17181b;
+  --bg-alt: #212328;
+  --bg-strong: #1c1e21;
+  --surface: #1f2125;
+  --surface-alt: #2a2d31;
+  --text: #f3ece6;
+  --text-soft: #d6d0ca;
+  --line: rgba(214, 192, 138, 0.16);
+  --accent: #d9bc7a;
+  --accent-soft: rgba(217, 188, 122, 0.12);
+  --link: #e0c48f;
+  --header-bg: rgba(23, 24, 27, 0.82);
+  --header-border: rgba(217, 188, 122, 0.14);
+  --button-primary: #d9bc7a;
+  --button-primary-hover: #e7ca86;
+  --button-text: #1f2125;
+}
